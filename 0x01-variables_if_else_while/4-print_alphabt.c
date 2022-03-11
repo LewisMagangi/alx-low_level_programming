@@ -9,6 +9,8 @@ if (a == 'e')
 a++;
 else if (a == 'q')
 a++;
+else if (a == 'z')
+putchar('\n');
 putchar(a);
 }
 return (0);

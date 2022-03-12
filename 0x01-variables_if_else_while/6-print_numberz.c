@@ -3,13 +3,10 @@
 int main(void)
 {
 int a;
-for (a = 'a'; a <= 'j'; a++)
+for (a = '0'; a <= '9'; a++)
 {
 putchar(a);
-if (a == 'j')
-{
+}
 putchar('\n');
-}
-}
 return (0);
 }

@@ -9,13 +9,10 @@ for (a = 'a'; a <= 'z'; a++)
 {
 putchar(a);
 }
-for (b = 'A'; b <= '['; b++)
+for (b = 'A'; b <= 'Z'; b++)
 {
-if (b == '[')
-{
+putchar(b);
+}
 putchar('\n');
-}
-putchar(a);
-}
 return (0);
 }

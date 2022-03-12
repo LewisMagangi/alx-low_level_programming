@@ -3,17 +3,14 @@
 int main(void)
 {
 int a;
-for (a = 'a'; a <= '{'; a++)
+for (a = 'a'; a <= 'z'; a++)
 {
 if (a == 'e')
 a++;
 else if (a == 'q')
 a++;
-else if (a == '{')
-{
-putchar('\n');
-}
 putchar(a);
 }
+putchar('\n');
 return (0);
 }

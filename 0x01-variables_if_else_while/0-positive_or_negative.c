@@ -3,6 +3,11 @@
 #include <stdio.h>
 /* more headers goes there */
 /* betty style doc for function main goes there */
+/**
+ * main -Entry Point
+ *
+ * Return :Always 0
+ */
 int main(void)
 {
 int n;

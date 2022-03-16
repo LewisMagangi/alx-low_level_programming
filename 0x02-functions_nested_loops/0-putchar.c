@@ -1,15 +1,18 @@
-#include <main.h>
+#include <stdio.h>
 /**
- * main - Entry point 
+ * main - Entry point
  *
  * Return: Always 0 (Success)
  */
-char print_putchar(char s)
+int main(void)
 {
-char s;
+char s[] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
+int i;
 
-s = "_putchar"
-putchar(s);
+for (i = 0; i <= 7; i++)
+	{
+	putchar(s[i]);
+	}
 putchar('\n');
 return (0);
 }

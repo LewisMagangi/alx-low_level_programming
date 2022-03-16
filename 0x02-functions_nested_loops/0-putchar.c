@@ -6,6 +6,8 @@
  */
 char print_putchar(char s)
 {
+char s;
+
 s = "_putchar"
 putchar(s);
 putchar('\n');

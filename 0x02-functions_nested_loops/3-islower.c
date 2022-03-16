@@ -1,9 +1,8 @@
 #include <stdio.h>
-int _islower(int c);
 /**
- * main - Entry point 
+ * _islower - checks if c is lowercase 
  *
- * Return: Always 0 (Success)
+ * Returns: 1 if c is lowercase else returns 1
  */
 int _islower(int c)
 {

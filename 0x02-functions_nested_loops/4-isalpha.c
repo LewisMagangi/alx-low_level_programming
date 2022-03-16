@@ -2,7 +2,7 @@
 /**
  * _isalpha - a function that checks if c is a letter
  *@c: single letter input
- * Returns 1 if c is a letter else returns 1
+ * Returns 1 if c is a letter else returns 0
  */
 int _isalpha(int c)
 {

@@ -2,12 +2,12 @@
 
 /**
  * _islower - checks if c is lowercase 
- *
+ * @c: single letter input
  * Returns: 1 if c is lowercase else returns 1
  */
 int _islower(int c)
 {
-if (c => 'a' && c <= 'z')
+if (c >= 'a' && c <= 'z')
 {
 return (1);
 }

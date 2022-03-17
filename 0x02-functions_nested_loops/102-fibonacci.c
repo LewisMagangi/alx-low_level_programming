@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	long int i, t1 t2, next;
+	long int i, t1, t2, next;
 
 	t1 = 1;
 	t2 = 2;

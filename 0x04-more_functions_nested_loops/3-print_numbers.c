@@ -2,6 +2,8 @@
 
 /**
  * print_numbers - a function that prints numbers
+ *
+ * Return: 0-9 followed by \ns
  */
 void print_numbers(void)
 {

@@ -6,7 +6,6 @@
  * 3 multiples print Fizz instead of intended no
  * 5 multiples print Buzz instead of intended no
  * 3 & 5 multiples print Fizz Buzz instead of intended no
- *
  * Return: Always 0 (Success)
  */
 int main(void)

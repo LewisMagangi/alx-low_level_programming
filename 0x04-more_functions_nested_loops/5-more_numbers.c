@@ -7,11 +7,11 @@ void more_numbers(void)
 	int a;
 	int b;
 
-	while (a <= '9')
+	while (a <= 9)
 	{
-		a = '0';
+		a = 0;
 
-		for (b = '0'; b <= '13'; b++)
+		for (b = 0; b <= 13; b++)
 		{
 			_putchar (b);
 		}

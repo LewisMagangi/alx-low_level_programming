@@ -10,10 +10,11 @@
  */
 int main(void)
 {
+	int i;
+
 	char f[] = "Fizz";
 	char b[] = "Buzz";
 	char fb[] = "FizzBuzz";
-	int i;
 
 	for (i = 1; i <= 100; i++)
 	{

@@ -15,9 +15,11 @@ int main(void)
 	char B[] = "Buzz";
 	char FB[] = "FizzBuzz";
 	int i;
-	
+
 	for (i = 1; i <= 100; i++)
 	{
+		if (i == 0)
+			printf("%s ", B);
 		if (i % 3 == 0)
 			printf("%s ", F);
 		else if ((i % 3 == 0) && (i % 5 == 0))

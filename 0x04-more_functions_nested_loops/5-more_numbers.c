@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * more_numbers - a function that prints numbers
  */
@@ -20,5 +19,3 @@ void more_numbers(void)
 		a++;
 	}
 }
-	
-

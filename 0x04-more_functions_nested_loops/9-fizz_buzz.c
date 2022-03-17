@@ -11,24 +11,24 @@
  */
 int main(void)
 {
-	char F[] = "Fizz";
-	char B[] = "Buzz";
-	char FB[] = "FizzBuzz";
+	char f[] = "Fizz";
+	char b[] = "Buzz";
+	char fb[] = "FizzBuzz";
 	int i;
 
 	for (i = 1; i <= 100; i++)
 	{
-		if (i == 0)
-			printf("%s ", B);
-		if (i % 3 == 0)
-			printf("%s ", F);
+		if (i == 100)
+			printf("%s ", b);
+		else if (i % 3 == 0)
+			printf("%s ", f);
 		else if ((i % 3 == 0) && (i % 5 == 0))
-			printf("%s ", FB);
+			printf("%s ", fb);
 		else if ((i % 5 == 0)
-			printf("%s ", B);
+			printf("%s ", b);
 		else
 			printf("%d ", i);
 	}
-	printf('\n');
+	printf("\n");
 	return (0);
 }

@@ -12,7 +12,7 @@ void print_square(int size)
 	{
 		if (size <= '0')
 		{
-			putchar ('\n');
+			_putchar ('\n');
 		}
 		else if (size == i)
 		{
@@ -24,12 +24,12 @@ void print_square(int size)
 			{
 				if (j == size)
 				{
-					putchar ('#');
-					putchar ('\n');
+					_putchar ('#');
+					_putchar ('\n');
 				}
 				else
 				{
-					putchar ('#');
+					_putchar ('#');
 				}
 
 

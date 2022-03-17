@@ -14,7 +14,7 @@ void print_most_numbers(void)
 		else if (a == '4')
 			a++;
 		else
-			putchar (a);
+			_putchar (a);
 	}
-	putchar ('\n');
+	_putchar ('\n');
 }

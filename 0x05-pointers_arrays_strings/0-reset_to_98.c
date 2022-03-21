@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * reset_to_98 - A function that takes a pointer to an int as parameter and updates tne value it points to to 98
+ * reset_to_98 - A function that takes a pointer and updates its value to 98
  *
- * @*n: value of a pointer.
+ * @n: value of a pointer.
  */
-void reset_to_98(int*n)
+void reset_to_98(int *n)
 {
 	int p;
 	int *n;

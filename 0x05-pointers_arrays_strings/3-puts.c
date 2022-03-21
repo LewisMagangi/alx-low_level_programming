@@ -6,15 +6,14 @@
 void _puts(char *str)
 {
 	int i;
-	char c;
 
 	i = 0;
 
 	while (*(str + i) != '\0')
 	{
-		printf("%c", (*(str + i)));
+		_putchar(*(str + i));
 		 i++;
 	}
-	putchar ('\n');
+	_putchar ('\n');
 }
 

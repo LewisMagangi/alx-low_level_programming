@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_array - a functiom that prints n elements of an array of intergers
  * @a: integer input
@@ -15,4 +16,5 @@ void print_array(int *a, int n);
 		i++;
 		printf("%d, ", a[i]);
 	}
+	_putchar('\n');
 }

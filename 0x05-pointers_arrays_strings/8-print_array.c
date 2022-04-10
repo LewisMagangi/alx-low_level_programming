@@ -5,7 +5,7 @@
  * @a: integer input
  * @b: interger input
  */
-void print_array(int *a, int n);
+void print_array(int *a, int n)
 {
 	int i = 0;
 
@@ -14,5 +14,5 @@ void print_array(int *a, int n);
 		printf("%d, ", *(a + i));
 		i++;
 	}
-	_putchar ('\n');
+	putchar('\n');
 }

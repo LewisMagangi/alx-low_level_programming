@@ -1,7 +1,8 @@
 #include "dog.h"
-#include "main.h"
-#ifndef DOGSTRUCT_H
-#define DOGSTRUCT_H
+#include <stdio.h>
+#include <stdlib.h>
+#ifndef DOGSTRUCTURE
+#define DOGSTRUCTURE
 /**
  * init_dog - a function that initialize a variable of type struct dog
  * @d: pointer to a struct
@@ -11,6 +12,10 @@
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	struct dog *d = &dog;
+	if (d == NULL)
+		return;
+	(*d).name = name;
+	(*d).age = age;
+	(*d).owner = owner;
 }
-#endif /* DOGSTRUCT_H */
+#endif /* DOGSTRUCTURE */

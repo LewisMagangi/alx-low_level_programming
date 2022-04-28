@@ -8,13 +8,12 @@
 void rev_string(char *s)
 {
 	int x = 0, y = 0, len = 0;
-
+	char u[];
 	while (*(s + len) != '\0')
 	{
 		len++;
 	}
 	y = len;
-	char u[len];
 
 	while (0 < y)
 	{

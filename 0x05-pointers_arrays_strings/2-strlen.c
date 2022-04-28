@@ -10,8 +10,8 @@ int _strlen(char *s)
 	int len  = 1;
 	char head = s[0];
 
-	while(head != '/0')
+	while (head != '/0')
 		head = s[len++];
-	
+
 	return (len - 1);
 }

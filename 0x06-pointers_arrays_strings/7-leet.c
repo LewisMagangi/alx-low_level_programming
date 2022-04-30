@@ -6,7 +6,7 @@
 *
 * Return: Always 0 (Success)
 */
-char *leet(char * n)
+char *leet(char *n)
 {
 	int i = 0, j;
 	int find[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};

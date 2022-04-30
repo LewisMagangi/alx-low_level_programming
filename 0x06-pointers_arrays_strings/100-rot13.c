@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
   *rot13-a function that encodes a string using rot13.
   *@n: A character input
@@ -23,6 +25,7 @@ char *rot13(char *n)
 			}
 			j++;
 		}
+		j = 0;
 		i++;
 	}
 	return (n);

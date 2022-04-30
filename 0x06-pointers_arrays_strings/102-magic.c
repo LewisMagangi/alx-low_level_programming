@@ -1,4 +1,10 @@
 #include <stdio.h>
+/**
+  *main-Entry Point
+  *@void: Nothing
+  *
+  *Return: An interger
+  */
 int main(void)
 {
 	int n;

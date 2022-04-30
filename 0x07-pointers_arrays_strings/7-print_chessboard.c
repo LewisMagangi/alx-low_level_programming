@@ -2,8 +2,9 @@
 /**
   *print_chessboard-a function that prints the chessboard.
   *@(*a)[8]-A pointer to an array
+  *@a: A character input
   *
-  *Return: 
+  *Return:
   */
 void print_chessboard(char (*a)[8])
 {

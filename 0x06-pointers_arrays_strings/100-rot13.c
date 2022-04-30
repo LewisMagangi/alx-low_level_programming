@@ -9,6 +9,8 @@
 char *rot13(char *n)
 {
 	int i = 0;
+	char input[52] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char output[52] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	while (n[i])
 	{

@@ -1,0 +1,18 @@
+#include "main.h"
+#include <string.h>
+#include <stdlib.h>
+/**
+  *_strdup-a function that returns a pointer allocated space.
+  *@str: A character input parameter
+  *
+  *Return: A character.
+  */
+char *_strdup(char *str)
+{
+	char *dup = malloc(sizeof(str));
+
+	if ((str == NULL) || (dup == NULL))
+		return (NULL);
+	strcpy(dup, str);
+	return (dup);
+}

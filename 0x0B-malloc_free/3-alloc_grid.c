@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * alloc_grid - Returns a pointer to a 2-dimensional array of
@@ -37,7 +38,7 @@ int **alloc_grid(int width, int height)
 		}
 		else
 		{
-			for (j = 0; j < width; width++)
+			for (j = 0; j < width; j++)
 				*(*(pptr + i) + j) = 0;
 		}
 	}

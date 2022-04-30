@@ -11,10 +11,10 @@
 char *str_concat(char *s1, char *s2)
 {
 	int comlen = 0;
-	int x = 0;
 	char *s2com;
 	int s1len;
 	int s2len;
+	int x = 0;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -27,15 +27,10 @@ char *str_concat(char *s1, char *s2)
 
 	s2com = malloc(sizeof(char) * comlen + (1));
 
-	if (s1 == NULL || s2 == NULL)
-		return NULL;
+	if (s2com == NULL)
+		return (NULL);
 	strcpy(s2com, s1);
-	for (x = 0; x < comlen; x++)
-	{
-		while (x >= s1len)
-		{
-			s2com[x] = s2[x - s1len]; 
-		}
-	}
+	for (x = s1len; x <= comlen; x++)
+		s2com[x] = s2[x - s1len];
 	return (s2com);
 }

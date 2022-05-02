@@ -1,28 +1,26 @@
-#include "main.h"
 #include <stdlib.h>
-
+#include <stdio.h>
+#include "main.h"
 /**
- * _calloc - ...
- * @nmemb: number of members
- * @size: size
- *
- * Return: ...
+ * _calloc - print 0s into 2D grid
+ * @nmemb: array num
+ * @size: size of ea array element
+ * Return: 0
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
+	char *arr;
 	unsigned int i;
-	char *p;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	p = malloc(nmemb * size);
-
-	if (p == NULL)
+	arr = malloc(nmemb * size);
+	if (arr == NULL)
 		return (NULL);
 
 	for (i = 0; i < (nmemb * size); i++)
-		p[0] = 0;
+		arr[i] = 0;
 
-	return (p);
+	return (arr);
 }

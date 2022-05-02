@@ -19,7 +19,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	
+
 	s1len = strlen(s1);
 	s2len = strlen(s2);
 
@@ -31,15 +31,15 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	s2comb = malloc(sizeof(char) * comblen + 1);
 	if (s2comb == NULL)
 		return (NULL);
-	
+
 	comblen = 0;
 	while (s1[i])
 		s2comb[comblen++] = s1[i++];
-	
-	while(s2[j] && j < n)
+
+	while (s2[j] && j < n)
 		s2comb[comblen++] = s2[j++];
 
 	s2comb[comblen] = '\0';
-	
+
 	return (s2comb);
 }

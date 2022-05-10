@@ -1,1 +1,1 @@
- variadic functions 
+Variadic function

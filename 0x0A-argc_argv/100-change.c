@@ -1,25 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *main-Entry Point
- *@argc: Argument Count
- *@argv: An array of strings
+ *findchange- A function to find the minimum change needed
+ *@i: Interger Input
  *
- *Return: Interger
+ *Return: Sum
  */
-int main(int argc, char *argv[])
+int findchange(int i)
 {
-	int i, sum = 0;
+	int sum = 0;
 
-	i = atoi(argv[1]);
-	if (argc != 2)
-	{
-		printf("Error\n");
-		return (1);
-	}
-	else if (i < 0)
-		printf("0\n");
-	else
+	while (i > 0)
 	{
 		while (i >= 25)
 		{
@@ -33,8 +24,8 @@ int main(int argc, char *argv[])
 		}
 		while (i >= 5)
 		{
-			 i -= 5;
-			 sum++;
+			i -= 5;
+			sum++;
 		}
 		while (i >= 2)
 		{
@@ -46,7 +37,36 @@ int main(int argc, char *argv[])
 			i -= 1;
 			sum++;
 		}
-		printf("%d\n", sum);
 	}
+	return (sum);
+}
+/**
+ *main-Entry Point
+ *@argc: Argument Count
+ *@argv: An array of strings
+ *
+ *Return: Interger
+ */
+int main(int argc, char *argv[])
+{
+	int cents, sum = 0;
+
+	if (argc != 2)
+	{
+		printf("Error\n");
+		return (1);
+	}
+
+	cents = atoi(argv[1]);
+
+	if (cents < 0)
+	{
+		printf("0\n");
+		return (0);
+	}
+
+	sum = findchange(cents);
+	printf("%d\n", sum);
+
 	return (0);
 }

@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
+
 /**
  *main-Entry Point
  *@argc: Argument Count
@@ -9,7 +11,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, sum;
+	int i, sum, j = 0;
 
 	if (argc == 1)
 		printf("0\n");
@@ -17,14 +19,17 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (atoi(argv[i]) == 0)
+		        while (argv[i][j])
 			{
-				break;
-				printf("Error\n");
-				return (1);
+				if (!isdigit(argv[i][j]))
+				{
+					printf("Error\n");
+					return (1);
+				}
+				else
+					sum += atoi(argv[i]);
+				j++;
 			}
-			else
-				sum += atoi(argv[i]);
 		}
 		printf("%d\n", sum);
 	}

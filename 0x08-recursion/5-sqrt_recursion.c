@@ -10,7 +10,7 @@
 int helper(int n, int guess);
 
 /**
- * _sqrt_recursion - a function that returns the natural square root of a number
+ * _sqrt_recursion - returns the natural square root of a number
  * @n: Integer input
  *
  * Return: The square root of n

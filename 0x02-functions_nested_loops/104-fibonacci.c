@@ -7,9 +7,9 @@
  */
 int main(void)
 {
-	unsigned long int a1 = 1, b1 = 2;
-	unsigned long int a2 = 0, b2 = 0;
-	unsigned long int sum1, sum2;
+	unsigned long int a_hi = 0, a_lo = 1;
+	unsigned long int b_hi = 0, b_lo = 2;
+	unsigned long int sum_hi, sum_lo;
 	unsigned long int limit = 1000000000;
 	int count;
 
@@ -17,20 +17,25 @@ int main(void)
 
 	for (count = 3; count <= 98; count++)
 	{
-		sum2 = a2 + b2;
-		sum1 = a1 + b1 + (sum2 >= limit);
-		sum2 %= limit;
+		sum_lo = a_lo + b_lo;
+		sum_hi = a_hi + b_hi;
+
+		if (sum_lo >= limit)
+		{
+			sum_lo -= limit;
+			sum_hi++;
+		}
 
 		printf(", ");
-		if (sum1)
-			printf("%lu%09lu", sum1, sum2);
+		if (sum_hi)
+			printf("%lu%09lu", sum_hi, sum_lo);
 		else
-			printf("%lu", sum2);
+			printf("%lu", sum_lo);
 
-		a1 = b1;
-		a2 = b2;
-		b1 = sum1;
-		b2 = sum2;
+		a_hi = b_hi;
+		a_lo = b_lo;
+		b_hi = sum_hi;
+		b_lo = sum_lo;
 	}
 
 	printf("\n");

@@ -1,30 +1,25 @@
 #include <stdio.h>
+
 /**
- * main - Entry point
+ * main - prints the first 50 Fibonacci numbers
  *
- * Return: Always 0 (Success)
+ * Return: Always 0
  */
 int main(void)
 {
-	long int i, t1, t2, next;
+	unsigned long int a = 1, b = 2, next;
+	int count;
 
-	t1 = 1;
-	t2 = 2;
+	printf("%lu, %lu", a, b);
 
-	next = t1 + t2;
-
-	printf("%li, %li, ", t1, t2);
-
-	for (i = 3; i < 50; ++i)
+	for (count = 3; count <= 50; count++)
 	{
-		printf("li, ", next);
-		t1 = t2;
-		t2 = next;
-
-		next = t1 + t2;
-
+		next = a + b;
+		printf(", %lu", next);
+		a = b;
+		b = next;
 	}
-	printf("%li", next);
 	printf("\n");
+
 	return (0);
 }

@@ -1,19 +1,16 @@
 #include "main.h"
 
 /**
- * _isalpha - checks for an alphabetic character
- * @c: character to check
+ * _abs - computes the absolute value of an integer
+ * @ab: integer to compute
  *
- * Return: 1 if c is a letter, 0 otherwise
+ * Return: absolute value of ab
  */
-int _isalpha(int c)
+int _abs(int ab)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+	if (ab < 0)
 	{
-		return (1);
+		return (-ab);
 	}
-	else
-	{
-		return (0);
-	}
+	return (ab);
 }
